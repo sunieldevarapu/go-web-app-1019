@@ -1,0 +1,15 @@
+replicaCout: 1
+image:
+  repository: sunieldevarapu/go-web-app
+  pullPolicy: IfNotPresent
+  tag: v1
+
+ingress:
+  enabled: false
+  className: ""
+  annotations: {}
+  hosts:
+    - host: go-web-app.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
